@@ -1,0 +1,28 @@
+function setup() {
+	createCanvas(windowWidth, windowHeight);
+  background(255);
+  rectMode(CENTER); // Makes the oval
+  fill(100, 0, 0);
+  ellipse(400, 300, 600, 400);
+	stroke(10, 50, 100);
+	strokeWeight(5);
+	textSize(50)
+	text("Dominick", 200, 1050, 395 ,400)
+  textAlign(CENTER, CENTER); // writes You did it on the oval
+  textSize(40);
+  fill(255);
+  text("You Did It!", 400, 300);
+	text("(Click Me!)", 400, 450); //Click me on the oval
+}
+
+function draw() {
+	rect(40, 40, 40, 40);
+	fill (10, 50, 100);
+	stroke(100, 0 , 0);
+	strokeWeight(5);
+ if (100 < mouseX && mouseX < 700 && 100 < mouseY && mouseY < 500) { //The hit box for the Oval
+    if (mouseIsPressed) {		
+      print("You Did It!"); // Says you did it on the console
+    }
+  }
+}
